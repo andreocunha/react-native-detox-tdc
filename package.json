@@ -7,6 +7,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest --verbose",
+    "detox": "detox build && detox test",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -19,6 +20,7 @@
     "@react-native-community/eslint-config": "^2.0.0",
     "@testing-library/react-native": "^8.0.0",
     "babel-jest": "^26.6.3",
+    "detox": "^19.0.0",
     "eslint": "7.14.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.2",

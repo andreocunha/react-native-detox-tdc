@@ -1,0 +1,335 @@
+handleCpuAcceleration: feature check for hvf
+cannot add library /Users/natalia/Library/Android/sdk/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib: failed
+cannot add library /Users/natalia/Library/Android/sdk/emulator/lib64/vulkan/libvulkan.dylib: failed
+cannot add library /Users/natalia/Library/Android/sdk/emulator/qemu/darwin-aarch64/lib64/vulkan/libMoltenVK.dylib: failed
+added library /Users/natalia/Library/Android/sdk/emulator/lib64/vulkan/libMoltenVK.dylib
+createOrGetGlobalVkEmulation: warning: instance doesn't support external memory capabilities, picking first physical device
+emulator: autoconfig: -skin 1080x2220
+emulator: autoconfig: -skindir (null)
+emulator: autoconfig: -kernel /Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//kernel-ranchu
+emulator: Target arch = 'arm64'
+emulator: Auto-detect: Kernel image requires new device naming scheme.
+emulator: Auto-detect: Kernel does not support YAFFS2 partitions.
+emulator: autoconfig: -ramdisk /Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//ramdisk.img
+emulator: Using initial system image: /Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//system.img
+emulator: Using initial vendor image: /Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//vendor.img
+emulator: autoconfig: -data /Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/userdata-qemu.img
+emulator: autoconfig: -initdata /Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/userdata.img
+emulator: autoconfig: -cache /Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/cache.img
+emulator: INFO: ignore sdcard for arm at api level >= 30
+emulator: Increasing RAM size to 2048MB
+emulator: VM heap size 256MB is below hardware specified minimum of 512MB,setting it to that value
+emulator: System image is read only
+emulator: Found 2 DNS servers: fe80::1 192.168.1.1
+emulator: VERBOSE: FeatureControlImpl.cpp:172: WARNING: unexpected system image feature string, emulator might not function correctly, please try updating the emulator.
+
+emulator: VERBOSE: FeatureControlImpl.cpp:175: Unexpected feature list:
+
+emulator: VERBOSE: FeatureControlImpl.cpp:177: Vulkan
+emulator: VERBOSE: FeatureControlImpl.cpp:179: 
+
+emulator: found magic skin width=1080 height=2220 bpp=16
+
+emulator: Requested console port 19782: Inferring adb port 19783.
+emulator: CPU Acceleration: working
+emulator: CPU Acceleration status: Hypervisor.Framework OS X Version 11.6
+emulator: VERBOSE: modem_main.cpp:489: started modem simulator host server at port: 65163
+emulator: GPU emulation enabled using 'host' mode
+emulator: Initializing hardware OpenGLES emulation support
+emulator: VERBOSE: MultiDisplay.cpp:341: create display 0
+emulator: VERBOSE: MultiDisplay.cpp:435: setDisplayPose 0 x 0 y 0 w 1080 h 2220 dpi 0
+emulator: INFO: ignore sdcard for arm at api level >= 30
+emulator: INFO: userspace-boot-properties.cpp:249: Sending adb public key [QAAAACkBHS7n1K6NpWqv5pspnBhbgBa3zntYuGN8nNNco+EEHwKzECZo1std243rTcWZ5/vptrsAb//VFDyfSfLtqzor5t+gMgqWlnEbX9/0Iow/aUbTzfZOzzDa4N9TMHhbNftPGoc391qNKXcnlZ2yaJMCxye36k+2yF023QNRtdYIdcHZjKpWNSV7Yreldrt45hWXjxVTGZ45xpHn67NnaCFiSeO6kzPLoqFy2losFRgYo2yV40TPBSiSZ/p36qPInGUW9Jpz/McYzSn5iMd4pIQ3sVbNMCKgcVrL3H9CddR1M8ycZBZXMFxhGYJ4548wO9/yTJp2T/7DqI1hNTAu+9nLC9ScyO/muyQDpZShCThZJrN+LfbsuSpcRW+Mm1OF17wwGS/hN0kgM56Qb5ESLz3SMToSUSuocqA791NNtKoWI2TdQ1xI9xH1umD5GAlJB9JEWyQ3qYp57ng7h25jugGcEvVCvdRSGQtUAt3jl3U88q+rKVZMgnlp/s9MmrrkOJB5LYgCN6moFyqdKNmum2YsxZ3J4EOIF1dqOBVsprWIvslN8qdLFqs57GIIWNCjDbUmDA93WlctusAybYPcOULrjUM3xG9ePYtazYBcRvOViPNLxnpKFLkedYyf9QKbkvBp9+3237BnlwCL2cJDNX9pjNeMQCwOqZyOlGUZLwR5fMRhjwEAAQA= natalia@unknown]
+emulator: Found 2 DNS servers: fe80::1 192.168.1.1
+Content of hardware configuration file:
+  hw.cpu.arch = arm64
+  hw.cpu.ncore = 1
+  hw.ramSize = 2048
+  hw.screen = multi-touch
+  hw.mainKeys = false
+  hw.trackBall = false
+  hw.keyboard = true
+  hw.keyboard.lid = false
+  hw.keyboard.charmap = qwerty2
+  hw.dPad = false
+  hw.rotaryInput = false
+  hw.gsmModem = true
+  hw.gps = true
+  hw.battery = true
+  hw.accelerometer = true
+  hw.gyroscope = true
+  hw.audioInput = true
+  hw.audioOutput = true
+  hw.sdCard = true
+  disk.cachePartition = true
+  disk.cachePartition.path = /Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/cache.img
+  disk.cachePartition.size = 66m
+  test.quitAfterBootTimeOut = -1
+  test.delayAdbTillBootComplete = 0
+  test.monitorAdb = 0
+  hw.lcd.width = 1080
+  hw.lcd.height = 2220
+  hw.lcd.depth = 16
+  hw.lcd.density = 440
+  hw.lcd.backlight = true
+  hw.lcd.vsync = 60
+  hw.gltransport = pipe
+  hw.gltransport.asg.writeBufferSize = 1048576
+  hw.gltransport.asg.writeStepSize = 4096
+  hw.gltransport.asg.dataRingSize = 32768
+  hw.gltransport.drawFlushInterval = 800
+  hw.displayRegion.0.1.xOffset = -1
+  hw.displayRegion.0.1.yOffset = -1
+  hw.displayRegion.0.1.width = 0
+  hw.displayRegion.0.1.height = 0
+  hw.displayRegion.0.2.xOffset = -1
+  hw.displayRegion.0.2.yOffset = -1
+  hw.displayRegion.0.2.width = 0
+  hw.displayRegion.0.2.height = 0
+  hw.displayRegion.0.3.xOffset = -1
+  hw.displayRegion.0.3.yOffset = -1
+  hw.displayRegion.0.3.width = 0
+  hw.displayRegion.0.3.height = 0
+  hw.display1.width = 0
+  hw.display1.height = 0
+  hw.display1.density = 0
+  hw.display1.xOffset = -1
+  hw.display1.yOffset = -1
+  hw.display1.flag = 0
+  hw.display2.width = 0
+  hw.display2.height = 0
+  hw.display2.density = 0
+  hw.display2.xOffset = -1
+  hw.display2.yOffset = -1
+  hw.display2.flag = 0
+  hw.display3.width = 0
+  hw.display3.height = 0
+  hw.display3.density = 0
+  hw.display3.xOffset = -1
+  hw.display3.yOffset = -1
+  hw.display3.flag = 0
+  hw.gpu.enabled = true
+  hw.gpu.mode = host
+  hw.initialOrientation = Portrait
+  hw.camera.back = emulated
+  hw.camera.front = emulated
+  vm.heapSize = 512
+  hw.sensors.light = true
+  hw.sensors.pressure = true
+  hw.sensors.humidity = true
+  hw.sensors.proximity = true
+  hw.sensors.magnetic_field = true
+  hw.sensors.magnetic_field_uncalibrated = true
+  hw.sensors.gyroscope_uncalibrated = true
+  hw.sensors.orientation = true
+  hw.sensors.temperature = true
+  hw.sensor.hinge = true
+  hw.sensor.hinge.count = 0
+  hw.sensor.hinge.type = 0
+  hw.sensor.hinge.sub_type = 0
+  hw.sensor.hinge.fold_to_displayRegion.0.1_at_posture = 1
+  hw.sensor.roll = false
+  hw.sensor.roll.count = 0
+  hw.sensor.roll.resize_to_displayRegion.0.1_at_posture = 6
+  hw.sensor.roll.resize_to_displayRegion.0.2_at_posture = 6
+  hw.sensor.roll.resize_to_displayRegion.0.3_at_posture = 6
+  hw.sensors.heart_rate = false
+  hw.useext4 = true
+  hw.arc = false
+  hw.arc.autologin = false
+  kernel.path = /Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//kernel-ranchu
+  kernel.newDeviceNaming = yes
+  kernel.supportsYaffs2 = no
+  disk.ramdisk.path = /Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//ramdisk.img
+  disk.systemPartition.initPath = /Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//system.img
+  disk.systemPartition.size = 4107m
+  disk.vendorPartition.initPath = /Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//vendor.img
+  disk.vendorPartition.size = 800m
+  disk.dataPartition.path = /Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/userdata-qemu.img
+  disk.dataPartition.size = 10g
+  disk.encryptionKeyPartition.path = /Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/encryptionkey.img
+  PlayStore.enabled = false
+  avd.name = Pixel_3a_API_31_arm64-v8a
+  avd.id = Pixel_3a_API_31_arm64-v8a
+  fastboot.forceColdBoot = false
+  android.sdk.root = /Users/natalia/Library/Android/sdk
+  android.avd.home = /Users/natalia/.android/avd
+.
+QEMU options list:
+emulator: argv[00] = "/Users/natalia/Library/Android/sdk/emulator/qemu/darwin-aarch64/qemu-system-aarch64"
+emulator: argv[01] = "-dns-server"
+emulator: argv[02] = "fe80::1,192.168.1.1"
+emulator: argv[03] = "-no-audio"
+emulator: argv[04] = "-serial"
+emulator: argv[05] = "null"
+emulator: argv[06] = "-android-ports"
+emulator: argv[07] = "19782,19783"
+emulator: argv[08] = "-cpu"
+emulator: argv[09] = "cortex-a53"
+emulator: argv[10] = "-machine"
+emulator: argv[11] = "type=virt"
+emulator: argv[12] = "-enable-hvf"
+emulator: argv[13] = "-m"
+emulator: argv[14] = "2048"
+emulator: argv[15] = "-lcd-density"
+emulator: argv[16] = "440"
+emulator: argv[17] = "-nodefaults"
+emulator: argv[18] = "-kernel"
+emulator: argv[19] = "/Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//kernel-ranchu"
+emulator: argv[20] = "-initrd"
+emulator: argv[21] = "/Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/initrd"
+emulator: argv[22] = "-drive"
+emulator: argv[23] = "index=0,id=vendor,if=none,file=/Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//vendor.img,read-only"
+emulator: argv[24] = "-device"
+emulator: argv[25] = "virtio-blk-device,drive=vendor"
+emulator: argv[26] = "-drive"
+emulator: argv[27] = "index=1,id=encrypt,if=none,file=/Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+emulator: argv[28] = "-device"
+emulator: argv[29] = "virtio-blk-device,drive=encrypt"
+emulator: argv[30] = "-drive"
+emulator: argv[31] = "index=2,id=userdata,if=none,file=/Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1310720"
+emulator: argv[32] = "-device"
+emulator: argv[33] = "virtio-blk-device,drive=userdata"
+emulator: argv[34] = "-drive"
+emulator: argv[35] = "index=3,id=cache,if=none,file=/Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+emulator: argv[36] = "-device"
+emulator: argv[37] = "virtio-blk-device,drive=cache"
+emulator: argv[38] = "-drive"
+emulator: argv[39] = "index=4,id=system,if=none,file=/Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//system.img,read-only"
+emulator: argv[40] = "-device"
+emulator: argv[41] = "virtio-blk-device,drive=system"
+emulator: argv[42] = "-netdev"
+emulator: argv[43] = "user,id=mynet"
+emulator: argv[44] = "-device"
+emulator: argv[45] = "virtio-net-device,netdev=mynet"
+emulator: argv[46] = "-chardev"
+emulator: argv[47] = "null,id=forhvc0"
+emulator: argv[48] = "-chardev"
+emulator: argv[49] = "null,id=forhvc1"
+emulator: argv[50] = "-device"
+emulator: argv[51] = "virtio-serial-pci,ioeventfd=off"
+emulator: argv[52] = "-device"
+emulator: argv[53] = "virtconsole,chardev=forhvc0"
+emulator: argv[54] = "-device"
+emulator: argv[55] = "virtconsole,chardev=forhvc1"
+emulator: argv[56] = "-device"
+emulator: argv[57] = "virtio-serial,ioeventfd=off"
+emulator: argv[58] = "-chardev"
+emulator: argv[59] = "socket,port=65162,host=::1,nowait,nodelay,ipv6,id=modem"
+emulator: argv[60] = "-device"
+emulator: argv[61] = "virtserialport,chardev=modem,name=modem"
+emulator: argv[62] = "-device"
+emulator: argv[63] = "virtio-rng-device"
+emulator: argv[64] = "-show-cursor"
+emulator: argv[65] = "-device"
+emulator: argv[66] = "virtio_input_multi_touch_pci_1"
+emulator: argv[67] = "-device"
+emulator: argv[68] = "virtio_input_multi_touch_pci_2"
+emulator: argv[69] = "-device"
+emulator: argv[70] = "virtio_input_multi_touch_pci_3"
+emulator: argv[71] = "-device"
+emulator: argv[72] = "virtio_input_multi_touch_pci_4"
+emulator: argv[73] = "-device"
+emulator: argv[74] = "virtio_input_multi_touch_pci_5"
+emulator: argv[75] = "-device"
+emulator: argv[76] = "virtio_input_multi_touch_pci_6"
+emulator: argv[77] = "-device"
+emulator: argv[78] = "virtio_input_multi_touch_pci_7"
+emulator: argv[79] = "-device"
+emulator: argv[80] = "virtio_input_multi_touch_pci_8"
+emulator: argv[81] = "-device"
+emulator: argv[82] = "virtio_input_multi_touch_pci_9"
+emulator: argv[83] = "-device"
+emulator: argv[84] = "virtio_input_multi_touch_pci_10"
+emulator: argv[85] = "-device"
+emulator: argv[86] = "virtio_input_multi_touch_pci_11"
+emulator: argv[87] = "-device"
+emulator: argv[88] = "virtio-keyboard-pci"
+emulator: argv[89] = "-netdev"
+emulator: argv[90] = "user,id=virtio-wifi,dhcpstart=10.0.2.16"
+emulator: argv[91] = "-device"
+emulator: argv[92] = "virtio-wifi-pci,netdev=virtio-wifi"
+emulator: argv[93] = "-device"
+emulator: argv[94] = "virtio-vsock-pci,guest-cid=77"
+emulator: argv[95] = "-L"
+emulator: argv[96] = "/Users/natalia/Library/Android/sdk/emulator/lib/pc-bios"
+emulator: argv[97] = "-soundhw"
+emulator: argv[98] = "hda"
+emulator: argv[99] = "-append"
+emulator: argv[100] = "no_timer_check keep_bootcon earlyprintk=ttyAMA0 console=0 cma=294M@0-4G ndns=2 loop.max_part=7 printk.devkmsg=on bootconfig"
+emulator: argv[101] = "-android-hw"
+emulator: argv[102] = "/Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/hardware-qemu.ini"
+Concatenated QEMU options:
+ /Users/natalia/Library/Android/sdk/emulator/qemu/darwin-aarch64/qemu-system-aarch64 -dns-server fe80::1,192.168.1.1 -no-audio -serial null -android-ports 19782,19783 -cpu cortex-a53 -machine type=virt -enable-hvf -m 2048 -lcd-density 440 -nodefaults -kernel /Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//kernel-ranchu -initrd /Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/initrd -drive index=0,id=vendor,if=none,file=/Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//vendor.img,read-only -device virtio-blk-device,drive=vendor -drive index=1,id=encrypt,if=none,file=/Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-device,drive=encrypt -drive index=2,id=userdata,if=none,file=/Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1310720 -device virtio-blk-device,drive=userdata -drive index=3,id=cache,if=none,file=/Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-device,drive=cache -drive index=4,id=system,if=none,file=/Users/natalia/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a//system.img,read-only -device virtio-blk-device,drive=system -netdev user,id=mynet -device virtio-net-device,netdev=mynet -chardev null,id=forhvc0 -chardev null,id=forhvc1 -device virtio-serial-pci,ioeventfd=off -device virtconsole,chardev=forhvc0 -device virtconsole,chardev=forhvc1 -device virtio-serial,ioeventfd=off -chardev socket,port=65162,host=::1,nowait,nodelay,ipv6,id=modem -device virtserialport,chardev=modem,name=modem -device virtio-rng-device -show-cursor -device virtio_input_multi_touch_pci_1 -device virtio_input_multi_touch_pci_2 -device virtio_input_multi_touch_pci_3 -device virtio_input_multi_touch_pci_4 -device virtio_input_multi_touch_pci_5 -device virtio_input_multi_touch_pci_6 -device virtio_input_multi_touch_pci_7 -device virtio_input_multi_touch_pci_8 -device virtio_input_multi_touch_pci_9 -device virtio_input_multi_touch_pci_10 -device virtio_input_multi_touch_pci_11 -device virtio-keyboard-pci -netdev user,id=virtio-wifi,dhcpstart=10.0.2.16 -device virtio-wifi-pci,netdev=virtio-wifi -device virtio-vsock-pci,guest-cid=77 -L /Users/natalia/Library/Android/sdk/emulator/lib/pc-bios -soundhw hda -append 'no_timer_check keep_bootcon earlyprintk=ttyAMA0 console=0 cma=294M@0-4G ndns=2 loop.max_part=7 printk.devkmsg=on bootconfig' -android-hw /Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/hardware-qemu.ini
+emulator: Android qemu version 30.8.4.0 (build_id 7600983) (CL:N/A)
+
+emulator: Starting QEMU main loop
+emulator: registered 'boot-properties' qemud service
+emulator: Adding boot property: 'ro.opengles.version' = '196608'
+emulator: Adding boot property: 'qemu.sf.fake_camera' = 'both'
+emulator: Adding boot property: 'dalvik.vm.heapsize' = '512m'
+emulator: Adding boot property: 'qemu.hw.mainkeys' = '0'
+emulator: Adding boot property: 'qemu.sf.lcd_density' = '440'
+emulator: goldfish_events.have-dpad: false
+emulator: goldfish_events.have-trackball: false
+emulator: goldfish_events.have-camera: true
+emulator: goldfish_events.have-keyboard: false
+emulator: goldfish_events.have-lidswitch: false
+emulator: goldfish_events.have-tabletmode: false
+emulator: goldfish_events.have-touch: false
+emulator: goldfish_events.have-multitouch: false
+emulator: Adding boot property: 'net.wifi_mac_prefix' = '19782'
+emulator: WARNING: Requested adb port (19783) is outside the recommended range [5555,5586]. ADB may not function properly for the emulator. See -help-port for details.
+Not using any http proxy
+emulator: Adding boot property: 'qemu.timezone' = 'America/Sao_Paulo'
+emulator: android_hw_fingerprint_init: fingerprint qemud listen service initialized
+
+emulator: emulator_window_fb_rotate
+
+emulator: VERBOSE: MultiDisplay.cpp:734: config multidisplay with config.ini 0x0 0x0 0x0
+emulator: VERBOSE: AdbInterface.cpp:367: Path:/Users/natalia/Library/Android/sdk/platform-tools/adb protocol version: 41
+emulator: VERBOSE: AdbInterface.cpp:367: Path:/Users/natalia/Library/Android/sdk/platform-tools/adb protocol version: 41
+emulator: VERBOSE: AdbInterface.cpp:367: Path:/Users/natalia/Library/Android/sdk/platform-tools/adb protocol version: 41
+emulator: VERBOSE: AdbInterface.cpp:409: Found: 3 adb executables
+emulator: VERBOSE: AdbInterface.cpp:411: Adb: /Users/natalia/Library/Android/sdk/platform-tools/adb
+emulator: VERBOSE: AdbInterface.cpp:411: Adb: /Users/natalia/Library/Android/sdk/platform-tools/adb
+emulator: VERBOSE: AdbInterface.cpp:411: Adb: /Users/natalia/Library/Android/sdk/platform-tools/adb
+emulator: VERBOSE: AdbInterface.cpp:367: Path:/Users/natalia/Library/Android/sdk/platform-tools/adb protocol version: 41
+emulator: VERBOSE: AdbInterface.cpp:367: Path:/Users/natalia/Library/Android/sdk/platform-tools/adb protocol version: 41
+emulator: INFO: ignore sdcard for arm at api level >= 30
+emulator: VERBOSE: AdbInterface.cpp:367: Path:/Users/natalia/Library/Android/sdk/platform-tools/adb protocol version: 41
+Your emulator is out of date, please update by launching Android Studio:
+ - Start Android Studio
+ - Select menu "Tools > Android > SDK Manager"
+ - Click "SDK Tools" tab
+ - Check "Android Emulator" checkbox
+ - Click "OK"
+
+emulator: Adding boot property: 'ro.opengles.version' = '196608'
+emulator: Adding boot property: 'qemu.sf.fake_camera' = 'both'
+emulator: Adding boot property: 'dalvik.vm.heapsize' = '512m'
+emulator: Adding boot property: 'qemu.hw.mainkeys' = '0'
+emulator: Adding boot property: 'qemu.sf.lcd_density' = '440'
+emulator: Adding boot property: 'net.wifi_mac_prefix' = '5554'
+emulator: Adding boot property: 'qemu.timezone' = 'America/Sao_Paulo'
+emulator: _hwFingerprint_connect: connect finger print listen is called
+
+emulator: VERBOSE: AndroidAsyncMessagePipe.cpp:26: Registering pipe service multidisplay
+emulator: VERBOSE: MultiDisplayPipe.cpp:33: MultiDisplayPipe created 0x11d5bb880
+emulator: VERBOSE: VirtioWifiForwarder.cpp:206: Not a HWSIM_CMD_FRAME netlink message
+emulator: VERBOSE: VirtioWifiForwarder.cpp:206: Not a HWSIM_CMD_FRAME netlink message
+emulator: VERBOSE: VirtioWifiForwarder.cpp:206: Not a HWSIM_CMD_FRAME netlink message
+emulator: VERBOSE: VirtioWifiForwarder.cpp:206: Not a HWSIM_CMD_FRAME netlink message
+emulator: VERBOSE: VirtioWifiForwarder.cpp:206: Not a HWSIM_CMD_FRAME netlink message
+emulator: VERBOSE: VirtioWifiForwarder.cpp:206: Not a HWSIM_CMD_FRAME netlink message
+emulator: VERBOSE: VirtioWifiForwarder.cpp:206: Not a HWSIM_CMD_FRAME netlink message
+emulator: VERBOSE: VirtioWifiForwarder.cpp:206: Not a HWSIM_CMD_FRAME netlink message
+emulator: INFO: ignore sdcard for arm at api level >= 30
+emulator: INFO: ignore sdcard for arm at api level >= 30
+emulator: Saving state on exit with session uptime 1202388 ms
+emulator: INFO: ignore sdcard for arm at api level >= 30
+emulator: Done with QEMU main loop
+emulator: User configuration saved to /Users/natalia/.android/avd/Pixel_3a_API_31_arm64-v8a.avd/emulator-user.ini
+emulator: VERBOSE: modem_main.cpp:392: sending STOP to modem simulator host server
+emulator: VERBOSE: modem_main.cpp:509: received exit request from parent process
+emulator: VERBOSE: AdbConnection.cpp:490: Adb transition disconnected -> disconnected
