@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+    Alert,
     Text,
     View,
     TextInput,
@@ -15,12 +16,11 @@ export default function Home() {
 
     function handleSubmit() {
         if (isValidEmail(email) && isValidPassword(password)) {
-            alert('Login efetuado com sucesso!');
+            Alert.alert('Login efetuado com sucesso!');
         }
         else {
-            alert('Email ou senha inválidos!');
+            Alert.alert('Email ou senha inválidos!');
         }
-        // alert(`Email: ${email} \nPassword: ${password}`);
     }
 
     return(
@@ -49,7 +49,11 @@ export default function Home() {
                     />
                 </View>
                 
-                <TouchableOpacity onPress={handleSubmit} style={styles.button}>
+                <TouchableOpacity
+                    onPress={handleSubmit}
+                    style={styles.button}
+                    testID="submitButton"
+                >
                     <Text style={styles.textButton}>LOGAR</Text>
                 </TouchableOpacity>
             </View>
