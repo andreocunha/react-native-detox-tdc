@@ -75,6 +75,7 @@ Array [
             "width": "100%",
           }
         }
+        testID="emailInput"
         type="text"
         value=""
       />
@@ -97,6 +98,7 @@ Array [
             "width": "100%",
           }
         }
+        testID="passwordInput"
         type="text"
         value=""
       />

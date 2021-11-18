@@ -32,6 +32,7 @@ export default function Home() {
                 <View style={styles.loginArea}>
                     <Text>Email</Text>
                     <TextInput
+                        testID="emailInput"
                         type="text"
                         value={email}
                         placeholder="Digite o email"
@@ -40,6 +41,7 @@ export default function Home() {
                     />
                     <Text>Senha</Text>
                     <TextInput
+                        testID="passwordInput"
                         type="text"
                         value={password}
                         placeholder="Digite sua senha"

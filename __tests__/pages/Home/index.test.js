@@ -22,16 +22,21 @@ describe('Home', () => {
         json = toJSON();
     });
 
+    afterEach(() => {    
+        jest.clearAllMocks();
+    });
+
     it('should render the snapshot', () => {
         expect(json).toMatchSnapshot();
     });
 
     it('given valid email, valid password and press button, should call alert with success', () => {
         fireEvent.changeText(emailInput, 'valid@email.com');
-        fireEvent.changeText(passwordInput, '1aB$asd');
+        fireEvent.changeText(passwordInput, 'Pass123#');
         fireEvent.press(button);
 
         expect(Alert.alert).toHaveBeenCalledWith('Login efetuado com sucesso!');
+        expect(Alert.alert).not.toHaveBeenCalledWith('Email ou senha inválidos!');
     });
 
     it('given valid email, invalid password and press button, should call alert with fail', () => {
@@ -39,6 +44,25 @@ describe('Home', () => {
         fireEvent.changeText(passwordInput, 'invalid');
         fireEvent.press(button);
 
-        expect(Alert.alert).toHaveBeenCalledWith('Login efetuado com sucesso!');
+        expect(Alert.alert).not.toHaveBeenCalledWith('Login efetuado com sucesso!');
+        expect(Alert.alert).toHaveBeenCalledWith('Email ou senha inválidos!');
+    });
+
+    it('given invalid email, valid password and press button, should call alert with fail', () => {
+        fireEvent.changeText(emailInput, 'invalid');
+        fireEvent.changeText(passwordInput, 'Pass123#');
+        fireEvent.press(button);
+
+        expect(Alert.alert).not.toHaveBeenCalledWith('Login efetuado com sucesso!');
+        expect(Alert.alert).toHaveBeenCalledWith('Email ou senha inválidos!');
+    });
+
+    it('given invalid email, invalid password and press button, should call alert with fail', () => {
+        fireEvent.changeText(emailInput, 'invalid');
+        fireEvent.changeText(passwordInput, 'invalid');
+        fireEvent.press(button);
+
+        expect(Alert.alert).not.toHaveBeenCalledWith('Login efetuado com sucesso!');
+        expect(Alert.alert).toHaveBeenCalledWith('Email ou senha inválidos!');
     });
 });
