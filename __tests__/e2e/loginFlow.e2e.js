@@ -1,9 +1,5 @@
 describe('Login Flow', () => {
-  beforeAll(async () => {
-    await device.launchApp();
-  });
-
-  afterEach(async () => {
+  beforeEach(async () => {
     await device.launchApp({ newInstance: true });
   });
 
